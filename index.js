@@ -2,11 +2,13 @@
  MIT License http://www.opensource.org/licenses/mit-license.php
  Author: @walnutgeek
  */
-var DataFrame = require('wdf/wdf/Dataframe');
+var DataFrame = require('wdf/wdf/DataFrame');
 var u$ = require('wdf/wdf/utils');
 
 function split_source(source) {
-  return source.split("\n").filter(u$.isStringNotEmpty).map(JSON.parse);
+  return source.split("\n")
+      .filter(u$.isStringNotEmpty)
+      .map(JSON.parse);
 }
 function read_wdf_to_json_array(filename) {
   var fs = require('fs');
@@ -28,4 +30,4 @@ module.exports = function(source) {
       "module.exports = new DataFrame(" +
       JSON.stringify(rows, undefined, "\t") +
       ",\n\t"+ JSON.stringify(config) +" );";
-}
+};
