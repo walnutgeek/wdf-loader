@@ -2,8 +2,8 @@
  MIT License http://www.opensource.org/licenses/mit-license.php
  Author: @walnutgeek
  */
-var DataFrame = require('wdf/wdf/DataFrame');
-var u$ = require('wdf/wdf/utils');
+var DataFrame = require('wdf/DataFrame');
+var u$ = require('wdf/utils');
 
 function split_source(source) {
   return source.split("\n")

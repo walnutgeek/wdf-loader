@@ -9,6 +9,6 @@
     "url": "https://github.com/walnutgeek/wdf-loader.git"
   },
   "dependencies": {
-    "wdf": "0.0.5"
+    "wdf": "0.0.6"
   }
 }
