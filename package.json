@@ -1,6 +1,6 @@
 {
   "name": "wdf-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "walnutgeek",
   "description": "Web Data Frame loader module for webpack",
   "license": "MIT",
