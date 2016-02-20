@@ -19,7 +19,8 @@ function read_wdf_to_json_array(filename) {
 require.extensions['.wdf'] = function(module,filename){
   var rows = read_wdf_to_json_array(filename);
   var config = rows.shift();
-  return new DataFrame(rows,config);
+  module.exports = new DataFrame(rows,config);
+  return module.exports;
 };
 
 module.exports = function(source) {
