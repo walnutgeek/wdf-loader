@@ -27,7 +27,7 @@ module.exports = function(source) {
   this.cacheable && this.cacheable();
   var rows = split_source(source) ;
   var config = rows.shift();
-  return "var DataFrame = require('wdf/wdf/Dataframe');\n" +
+  return "var DataFrame = require('wdf/DataFrame');\n" +
       "module.exports = new DataFrame(" +
       JSON.stringify(rows, undefined, "\t") +
       ",\n\t"+ JSON.stringify(config) +" );";
